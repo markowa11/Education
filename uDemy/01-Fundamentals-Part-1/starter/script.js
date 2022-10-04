@@ -111,4 +111,4 @@ console.log(ageSarah >= 16) // true
 
 const isFullAge = ageSarah >= 18;
 
-// 1:59:03
+// 1:59:03;;
