@@ -110,5 +110,6 @@ console.log(ageJonas < ageSarah) // 39 < 17 = false
 console.log(ageSarah >= 16) // true 
 
 const isFullAge = ageSarah >= 18;
+console.log(`hello`)
 
 // 1:59:03;;
