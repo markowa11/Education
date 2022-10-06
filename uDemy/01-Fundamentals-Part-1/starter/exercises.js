@@ -4,12 +4,12 @@ LECTURE: Values and Variables
 assign their values according to your own country (population in millions)
 2. Log their values to the console
 */
-const country = `Bulgaria`
-const continent = `Europe`
-let population = 6
-console.log(country)
-console.log(continent)
-console.log(population)
+// const country = `Bulgaria`
+// const continent = `Europe`
+// let population = 6
+// console.log(country)
+// console.log(continent)
+// console.log(population)
 
 /*
 LECTURE: Data types
@@ -18,9 +18,9 @@ country. The variable should hold a Boolean value. Also declare a variable
 'language', but don't assign it any value yet
 2. Log the types of 'isIsland', 'population', 'country' and 'language'
 to the console */
-const isIsland = false
-let language
-console.log(typeof language, typeof isIsland, typeof population, typeof country)
+// const isIsland = false
+// let language
+// console.log(typeof language, typeof isIsland, typeof population, typeof country)
 
 /* 
 LECTURE: let, const and var
@@ -29,31 +29,31 @@ countries have multiple languages, but just choose one)
 2. Think about which variables should be const variables (which values will never 
 change, and which might change?). Then, change these variables to const.
 3. Try to change one of the changed variables now, and observe what happens */
-language = `bulgarian`
+// language = `bulgarian`
 
-/* 
+/*
 LECTURE: Basic Operators
-1. If your country split in half, and each half would contain half the population, 
+1. If your country split in half, and each half would contain half the population,
 then how many people would live in each half?
 2. Increase the population of your country by 1 and log the result to the console
-3. Finland has a population of 6 million. Does your country have more people than 
+3. Finland has a population of 6 million. Does your country have more people than
 Finland?
-4. The average population of a country is 33 million people. Does your country 
+4. The average population of a country is 33 million people. Does your country
 have less people than the average country?
 5. Based on the variables you created, create a new variable 'description'
-which contains a string with this format: 'Portugal is in Europe, and its 11 million 
+which contains a string with this format: 'Portugal is in Europe, and its 11 million
 people speak portuguese'
 */
-let halfPopulation = population / 2
-console.log(halfPopulation)
-halfPopulation++
-console.log(halfPopulation)
-const finlad = 6
-console.log(finlad > population)
-const averageCountryPopulation = 33
-console.log(averageCountryPopulation > population)
-const description = `${country} is in ${continent}, and ${population} milion people speak ${language}`
-console.log(description)
+// let halfPopulation = population / 2
+// console.log(halfPopulation)
+// halfPopulation++
+// console.log(halfPopulation)
+// const finlad = 6
+// console.log(finlad > population)
+// const averageCountryPopulation = 33
+// console.log(averageCountryPopulation > population)
+// const description = `${country} is in ${continent}, and ${population} milion people speak ${language}`
+// console.log(description)
 
 /*
 LECTURE: Taking Decisions: if / else Statements
@@ -64,7 +64,13 @@ minus the country's population)
 2. After checking the result, change the population temporarily to 13 and then to 
 130. See the different results, and set the population back to original 
 */
-
+const bulgariaPopulation = 7
+const averagePopulation = 33
+if (bulgariaPopulation >= averagePopulation) {
+    console.log(`Bulgaria's population is above average`)
+} else {
+    console.log(`BUlgaria's population is ${averagePopulation - bulgariaPopulation} million below average`)
+}
 
 /*
 LECTURE: Type Conversion and Coercion
