@@ -186,4 +186,78 @@ if(){
 
 
 // TYPE CONVERSION AND COERCION
-// 2:50:58;
+// type conversion manually convert types
+// type coercions when JS automatically convert types
+
+// type conversion
+// const inputYear = `1998` // still a string
+// console.log(Number(inputYear)) // convert the string into number by "Number()"
+// console.log(inputYear + 18) // string + number = concatination 199818
+
+// console.log(Number`Marji`) // we get `NaN` = not a number
+// console.log(typeof NaN) // NaN = invalid number
+
+// console.log(String(23)) // convert the number into string with `String()`
+// console.log(typeof String(23)) // is a string
+
+// // type coercion
+// console.log(`I'm ` + 23 + ` years old`)
+// console.log(`I'm ` + `23` + ` years old`) // numbers to strings with "+"
+// console.log(`23` - `10` - 3) // strings to numbers automatically with "-"
+
+// let n = `1` + `1` // 11
+// n = n - 1; // 11 - 1 = 10
+// console.log(n) // -> 10
+
+
+// TRUTHY AND FALSY VALUES
+// 5 falsy values: 0, ``, undefined, null, NaN -> will become false when convertet into booleans
+
+// console.log(Boolean(0)) // false
+// console.log(Boolean(undefined)) // false
+// console.log(Boolean(`Marji`)) // true
+// console.log(Boolean(``)) // false
+// console.log(Boolean({})) // true
+
+// const money = 0 // converts the zero to false so the console prints the `else` statemant
+// if (money) {
+//     console.log(`Don't spent it all`)
+// } else {
+//     console.log(`You should get a job`)
+// } // you should get a job
+
+// let height =
+// if (height) {
+//     console.log(`YAY! Hight is defind`)
+// } else {
+//     console.log(`Height is UNDEFINED`)
+// } // height is undefined so it prints the `else`statemant
+// // if height = 0 -> height is undefined because the zero is a falsey value
+
+
+// EQUALITY OPERATORS: == VS ===
+// const age = 18
+// if (age === 18)
+//     console.log(`You just became an adult!`)
+
+// console.log(18 === 19) // false
+// // "===" -> strict doesnt performe type coercion, "==" -> loose and performs type coercion
+// console.log(`18` == 18) // this performs type coercion
+// // use the ===! and transform the value manually
+
+// const favorite = Number(prompt(`What's your favorite number?`))
+// console.log(favorite) // logs as string
+
+// if (favorite === 23) {
+//     console.log(`Cool 23 is an amazing number`)
+// } else if (favorite === 7) {                      //adds additional statements
+//     console.log(`7 is also a cool number`)
+// } else if (favorite === 9) {
+//     console.log(`9 is also a cool number`)
+// } else {
+//     console.log(`The number is not 23, 7 or 9`)
+// }
+
+// if (favorite !== 23) { // !== different log "why not 23"
+//     console.log(`Why not 23?`)
+// }

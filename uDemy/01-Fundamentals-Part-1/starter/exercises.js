@@ -82,6 +82,11 @@ LECTURE: Type Conversion and Coercion
 5 + 6 + '4' + 9 - 4 - 2;
 2. Execute the operations to check if you were right
 */
+console.log(`9` - `5`) // -> 4
+console.log(`19` - `13` + `17`) // -> 617
+console.log('19' - '13' + 17) // -> 23
+console.log('123' < 57) // undefined?
+console.log(5 + 6 + '4' + 9 - 4 - 2) // 117 (WRONG) --> 1143
 
 /*
 LECTURE: Equality Operators: == vs. ===
@@ -103,6 +108,15 @@ when you input 1
 8. Reflect on why we should use the === operator and type conversion in this 
 situation
 */
+const numNeighbours = Number(prompt(`How many neighbour countries does your country 
+have?`))
+if (numNeighbours === 1) {
+    console.log(`Only 1 border!`)
+} else if (numNeighbours > 1) {
+    console.log(`More than 1 border`)
+} else {
+    console.log(`No borders`)
+}
 
 /*
 LECTURE: Logical Operators
