@@ -261,3 +261,59 @@ if(){
 // if (favorite !== 23) { // !== different log "why not 23"
 //     console.log(`Why not 23?`)
 // }
+
+
+// 23. BOOLEAN LOGIC: THE AND, OR and NOT operators
+/*
+A AND B
+A: Sarah has a driver's license
+B: Sarah has good vision
+--> both can be either true or false
+a + b: Sarah has a driver's license AND good vision // will be true if the 2 statements are true
+
+A OR B
+A: Sarah has a driver's license
+B: Sarah has good vision
+--> both can be either true or false
+a + b: Sarah has a driver's license OR good vision // either A or B the operation will be true, else will be false
+
+NOT A, NOT B
+inverts false/true value
+
+age = 16
+A: Age is greater or equal 20 -> false
+B: Age is less than 30 -> true
+
+!a -> not A, true
+A AND B -> false
+A OR B -> true
+!A and B -> true and true = true
+A or !B -> false and false = false
+*/
+
+
+// LOGICAL OPERATORS
+
+const hasDriversLicense = true // A
+const hasGoodVision = true // B
+
+console.log(hasDriversLicense && hasGoodVision) // && -> AND OPERATOR 
+console.log(hasDriversLicense || hasGoodVision) // || -> OR OPERATOR
+console.log(!hasDriversLicense) // ! -> NOT operator
+
+// const shouldDrive = hasDriversLicense && hasGoodVision
+// if (shouldDrive) {
+//     console.log(`Sarah is able to drive! 🥳`)
+// } else {
+//     console.log(`Someone else should drive....😕`)
+// }
+
+const isTired = false // C
+console.log(hasDriversLicense && hasGoodVision && isTired)
+// const shouldDrive = hasDriversLicense && hasGoodVision
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log(`Sarah is able to drive! 🥳`)
+} else {
+    console.log(`Someone else should drive....😕`)
+}
