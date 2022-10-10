@@ -8,23 +8,23 @@ function timeMinutes(input) {
     if (minutesPlus >= 60) {
         hour = hour + 1
         minutesPlus = minutesPlus - 60
-
-        if (hour > 23) {
-            hour = 0
-        }
-
-        if (minutesPlus < 10) {
-            console.log(`${hour}:0${minutesPlus}`)
-        } else {
-            console.log(`${hour}:${minutesPlus}`)
-        }
     }
 
+    if (hour > 23) {
+        hour = 0;
+    }
+
+    if (minutesPlus < 10) {
+        console.log(`${hour}:0${minutesPlus}`)
+    } else {
+        console.log(`${hour}:${minutesPlus}`)
+    }
 }
 
-timeMinutes(["12", "49"]) // --> 0:16
-// timeMinutes(["11", "08"]) // --> 11:23
 
+timeMinutes(["0", "01"]) // --> 0:16
+// timeMinutes(["11", "08"]) // --> 11:23
+// timeMinutes(["1", "46"]) //--> 2:01
 
 /*
 Да се напише функция, която получава час и минути от 24-часово денонощие и изчислява колко ще е часът след 15 минути. 
