@@ -1,5 +1,9 @@
-function numbers() {
+function numbersN(input) {
+    let n = Number(input[0])
 
+    for (i = 1; i <= n; i += 3) {
+        console.log(i)
+    }
 }
 
-numbers()
+numbersN(["10"])
