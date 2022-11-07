@@ -20,11 +20,11 @@
 // checkWinner(scoreDolphins, scoreKoalas)
 
 function checkWinner() {
-    let avgDolphins = 44 + 23 + 71
-    let avgKoalas = 65 + 54 + 49
+    let avgDolphins = (300 + 23 + 71) / 3
+    let avgKoalas = (65 + 54 + 49) / 3
 
     if (avgDolphins >= 2 * avgKoalas) {
-        console.log(`Dolphins win (${avgDolphins} vs ${avgDolphins})`)
+        console.log(`Dolphins win (${avgDolphins.toFixed(0)} vs ${avgKoalas})`)
     } else if (avgKoalas >= 2 * avgDolphins) {
         console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`)
     } else {
