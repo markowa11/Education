@@ -59,20 +59,20 @@ BMI (28.3) is higher than John's (23.9)!"
 // }
 
 /* CОDING CHALLANGE #3
-There are two gymnastics teams, Dolphins and Koalas. They compete against each 
+There are two gymnastics teams, Dolphins and Koalas. They compete against each
 other 3 times. The winner with the highest average score wins a trophy!
 Your tasks:
 1. Calculate the average score for each team, using the test data below
-2. Compare the team's average scores to determine the winner of the competition, 
-and print it to the console. Don't forget that there can be a draw, so test for that 
+2. Compare the team's average scores to determine the winner of the competition,
+and print it to the console. Don't forget that there can be a draw, so test for that
 as well (draw means they have the same average score)
 
-3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a 
-team only wins if it has a higher score than the other team, and the same time a 
-score of at least 100 points. Hint: Use a logical operator to test for minimum 
+3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
+team only wins if it has a higher score than the other team, and the same time a
+score of at least 100 points. Hint: Use a logical operator to test for minimum
 score, as well as multiple else-if blocks �
-4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when 
-both teams have the same score and both have a score greater or equal 100 
+4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
+both teams have the same score and both have a score greater or equal 100
 points. Otherwise, no team wins the trophy
 
 Test data:
@@ -104,18 +104,36 @@ Test data:
 //     console.log(`No one wins the trophy this year!`)
 // }
 
-//§ Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106 
-const averageDolphins = (97 + 112 + 101) / 3
-const averageKoalas = (109 + 95 + 106) / 3
-const minimumScore = 100
-console.log(averageDolphins, averageKoalas)
+//§ Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+// const averageDolphins = (97 + 112 + 101) / 3
+// const averageKoalas = (109 + 95 + 106) / 3
+// const minimumScore = 100
+// console.log(averageDolphins, averageKoalas)
 
-if ((averageDolphins > averageKoalas) && averageDolphins >= minimumScore) {
-    console.log(`Team Dolphins wins the trophy!`)
-} else if ((averageDolphins < averageKoalas) && averageKoalas >= minimumScore) {
-    console.log(`Team Koalas wins the trophy`)
-} else if ((averageDolphins === averageKoalas) && averageDolphins >= minimumScore) {
-    console.log(`It's a draw!`)
-} else {
-    console.log(`No one wins the trophy this year!`)
-}
+// if ((averageDolphins > averageKoalas) && averageDolphins >= minimumScore) {
+//     console.log(`Team Dolphins wins the trophy!`)
+// } else if ((averageDolphins < averageKoalas) && averageKoalas >= minimumScore) {
+//     console.log(`Team Koalas wins the trophy`)
+// } else if ((averageDolphins === averageKoalas) && averageDolphins >= minimumScore) {
+//     console.log(`It's a draw!`)
+// } else {
+//     console.log(`No one wins the trophy this year!`)
+// }
+
+
+// CODING CHALLANGE #4
+
+// const bill = 275
+// const tip
+
+// const bill = 275
+// const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
+// console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`)
+
+// if (bill >= 50 && bill <= 300) {
+//     tip = bill * 0.15
+//     console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`)
+// } else {
+//     tip = bill * 0.20
+//     console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`)
+// }

@@ -294,26 +294,76 @@ A or !B -> false and false = false
 
 // LOGICAL OPERATORS
 
-const hasDriversLicense = true // A
-const hasGoodVision = true // B
+// const hasDriversLicense = true // A
+// const hasGoodVision = true // B
 
-console.log(hasDriversLicense && hasGoodVision) // && -> AND OPERATOR 
-console.log(hasDriversLicense || hasGoodVision) // || -> OR OPERATOR
-console.log(!hasDriversLicense) // ! -> NOT operator
+// console.log(hasDriversLicense && hasGoodVision) // && -> AND OPERATOR
+// console.log(hasDriversLicense || hasGoodVision) // || -> OR OPERATOR
+// console.log(!hasDriversLicense) // ! -> NOT operator
 
-// const shouldDrive = hasDriversLicense && hasGoodVision
-// if (shouldDrive) {
+// // const shouldDrive = hasDriversLicense && hasGoodVision
+// // if (shouldDrive) {
+// //     console.log(`Sarah is able to drive! 🥳`)
+// // } else {
+// //     console.log(`Someone else should drive....😕`)
+// // }
+
+// const isTired = false // C
+// console.log(hasDriversLicense && hasGoodVision && isTired)
+// // const shouldDrive = hasDriversLicense && hasGoodVision
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
 //     console.log(`Sarah is able to drive! 🥳`)
 // } else {
 //     console.log(`Someone else should drive....😕`)
 // }
 
-const isTired = false // C
-console.log(hasDriversLicense && hasGoodVision && isTired)
-// const shouldDrive = hasDriversLicense && hasGoodVision
 
-if (hasDriversLicense && hasGoodVision && !isTired) {
-    console.log(`Sarah is able to drive! 🥳`)
-} else {
-    console.log(`Someone else should drive....😕`)
-}
+// SWITCH STATEMENT
+
+// const day = `friday`
+
+// switch (day) {
+//     case `monday`: // day === `monday` if  true bottom will execute
+//         console.log(`Plan my course structure`)
+//         console.log(`Go to coding meetup`)
+//         break;
+//     case `tuesday`:
+//         console.log(`Prepare videos`)
+//         break;
+//     case `wednesday`:
+//         console.log(`play games`)
+//         break;
+//     default:
+//         console.log(`Not a valid day`)
+// }
+
+// STATEMNTS AND EXPRESSIONS
+
+// 3 + 4 // expresion
+// 1991 // expresion
+// true && false && !false // expresion
+
+// if (23 > 10) {
+//     const str = `23 is bigger`   // -- this is statemnt, hence the if else statemnt
+//     // целия блок е стейтмънт, отделни елементи е експрешън
+// }
+
+// CONDITIONAL OPERATOR
+
+// const age = 23
+// age >= 18 ? console.log(`I like to drink wine 🍷`) : console.log(`I like to drik water 💧`) // else/if
+
+// let drink2 = age >= 18 ? `wine` : `water`
+// console.log(drink2)
+
+// let drink3
+// if (age >= 18) {
+//     drink3 = `wine`
+// } else {
+//     drink3 = `water`
+// }
+// console.log(drink3)
+
+// console.log(`i like to drink ${age >= 18 ? `wine` : `water`}`)
+
