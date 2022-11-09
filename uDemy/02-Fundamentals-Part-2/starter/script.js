@@ -25,11 +25,52 @@
 // const age1 = calcage1(1998)
 // console.log(age1)
 
-function fruitProcessor(apples, oranges) {
-    console.log(apples, oranges)
-    const juice = `Juice with ${apples} apples and ${oranges} oranges.`
-    return juice
-}
+// function fruitProcessor(apples, oranges) {
+//     console.log(apples, oranges)
+//     const juice = `Juice with ${apples} apples and ${oranges} oranges.`
+//     return juice
+// }
 
-const appleJuice = fruitProcessor(5, 0)
-console.log(appleJuice)
+// const appleJuice = fruitProcessor(5, 0)
+// console.log(appleJuice)
+
+// const jonas = {
+//     fistName: `Jonas`,
+//     lastName: `Markow`,
+//     age: 23,                                   // object jonas has 6 properties
+//     job: `teacher`,
+//     friends: [`Max`, `Caroline`]
+// }
+
+const jonas = {
+    fistName: `Mariela`,
+    lastName: `Markowa`,
+    age: 23,
+    job: `teacher`,
+    friends: [`Max`, `Caroline`, `jax`]
+}
+// console.log(jonas)
+// console.log(jonas.friends)
+// console.log(jonas[`age`])
+
+// const nameKey = `Name`
+// console.log(jonas[`fist` + nameKey])
+// console.log(jonas[`last` + nameKey])
+
+// const interest = prompt(`What do you want to know about Mariela?`)
+// console.log(jonas[interest])
+
+// if (jonas[interest]) {
+//     console.log(jonas[interest])
+// } else {
+//     console.log(`Wrong request!`)
+// }
+
+// jonas.location = `Bulgaria`
+// console.log(jonas)
+
+// challange
+// `Mariela has 3 friends and his bf is called Martina`
+
+console.log(jonas.fistName + `has 3 friends and hif bj is called ` + jonas.friends[0])
+console.log(`${jonas.fistName} has ${jonas.friends.length} friends and his bf is ${jonas.friends[0]}`)
