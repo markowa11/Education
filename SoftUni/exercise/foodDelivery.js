@@ -132,3 +132,8 @@
 
 // }
 // summerOutfit(["16", "Morning"])
+
+
+let result = `5` - `4` + Number(`3`)
+
+console.log(result)
