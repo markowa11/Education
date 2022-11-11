@@ -104,22 +104,133 @@
 // console.log(jonas.age)
 
 // challange
-// `Mariela is a 24-year old teacher, and he has a/no drivers license` 
+// `Mariela is a 24-year old teacher, and he has a/no drivers license`
 
 
-const jonas = {
-    fistName: `Mariela`,
-    lastName: `Markowa`,
-    birthYear: 1998,
-    job: `teacher`,
-    friends: [`Max`, `Caroline`, `jax`],
-    hasDriversLicense: true,
-    calcAge: function () {
-        return 2023 - this.birthYear
-    },
-    getSummary: function () {
-        return `${this.fistName} is a ${this.calcAge()}-years old ${this.job}, and he has ${this.hasDriversLicense ? `a` : `no`} drivers license`
-    }
-}
+// const jonas = {
+//     fistName: `Mariela`,
+//     lastName: `Markowa`,
+//     birthYear: 1998,
+//     job: `teacher`,
+//     friends: [`Max`, `Caroline`, `jax`],
+//     hasDriversLicense: true,
+//     calcAge: function () {
+//         return 2023 - this.birthYear
+//     },
+//     getSummary: function () {
+//         return `${this.fistName} is a ${this.calcAge()}-years old ${this.job}, and he has ${this.hasDriversLicense ? `a` : `no`} drivers license`
+//     }
+// }
 
-console.log(jonas.getSummary())
+// console.log(jonas.getSummary())
+
+
+// FOR LOOP
+
+// console.log(`Lifting weights repetition 1`)
+// console.log(`Lifting weights repetition 2`)
+// console.log(`Lifting weights repetition 3`)
+// console.log(`Lifting weights repetition 4`)
+// console.log(`Lifting weights repetition 5`)
+
+// for loop ceeps runong while condition is true
+// for (let rep = 1; rep <= 10; rep++) {  // (variable, condition, the way the variable changes)
+//     console.log(`Lifting weights repetition ${rep}`)
+// }
+
+
+// const jonas = [
+//     `Jonas`,
+//     `Shmetmann`,
+//     2037 - 1991,
+//     `teacher`,
+//     [`Max`, `Peter`, `Steven`],
+//     true
+// ]
+
+// const types = []
+
+// // console.log(jonas[0])
+// // console.log(jonas[1])
+// // console.log(jonas[2])
+// // jonas[5], does not exist
+
+// // for (let i = 0; i < 5; i++) {          // counter variable
+// //     console.log(jonas[i])
+// // }
+
+// for (let i = 0; i < jonas.length; i++) {  // `i` --> counter variable
+//     console.log(jonas[i], typeof jonas[i])
+
+//     // filling types array
+//     // types[i] = typeof jonas[i]
+//     types.push(typeof jonas[i])
+// }
+
+// console.log(types)
+
+// const birthYears = [1991, 2007, 1969, 2020]
+// const ages = []
+
+// for (let i = 0; i < birthYears.length; i++) {
+//     ages.push(2037 - birthYears[i])
+// }
+// console.log(ages)
+
+// CONTINUE AND BREAK
+
+//continue
+// for (let i = 0; i < jonas.length; i++) {  // `i` --> counter variable
+//     if (typeof jonas[i] !== `string`) continue  // !== not a
+
+//     console.log(jonas[i], typeof jonas[i])
+// }
+
+// for (let i = 0; i < jonas.length; i++) {  // `i` --> counter variable
+//     if (typeof jonas[i] === `number`) break  // !== not a
+
+//     console.log(jonas[i], typeof jonas[i])
+// }
+
+
+// LOOPING BACKWARDS
+// last 0, 1.... 5
+// now 5, 4... 0
+// const jonas = [
+//     `Jonas`,
+//     `Shmetmann`,
+//     2037 - 1991,
+//     `teacher`,
+//     [`Max`, `Peter`, `Steven`],
+//     true
+// ]
+
+// for (let i = jonas.length - 1; i >= 0; i--) {
+//     console.log(jonas[i])
+// }
+
+// for (let exercise = 1; exercise <= 3; exercise++) {
+//     console.log(`--Starting exercise ${exercise}--`)
+
+//     for (let rep = 1; rep <= 5; rep++) {
+//         console.log(`Exersice ${exercise}: lifting weights ${rep}`)
+//     }
+// }
+
+// for (let rep = 1; rep <= 10; rep++) {  // (variable, condition, the way the variable changes)
+//     console.log(`Lifting weights repetition ${rep}`)
+// }
+
+// let rep = 1
+// while (rep <= 10) {
+//     console.log(`WHILE: Lifting weights repetition ${rep}`)
+//     rep++
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1
+
+// while (dice !== 6) {
+//     console.log(`You rolled a ${dice}`)
+//     dice = Math.trunc(Math.random() * 6) + 1   // това е като брейк иначе ще е безкраен луууп
+//     if (dice === 6) console.log(`Loop is about to end...`)
+// }
