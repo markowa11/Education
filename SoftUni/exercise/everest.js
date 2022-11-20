@@ -16,7 +16,7 @@ function everest(input) {
             meeters += daily;
             days++;
         } else if (command === `No`) {
-            days
+            // days
             meeters += daily;
         }
         if (meeters >= peakHeight) {

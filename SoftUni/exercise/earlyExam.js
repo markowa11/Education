@@ -1,30 +1,30 @@
 // // cat diet
 
-// function catDiet(input) {
-//     let gramProtein = 4
-//     let gramCal = 9
-//     let gramVug = 4
-//     let pM = input[0] / 100
-//     let pP = input[1] / 100
-//     let pV = input[2] / 100
-//     let totalCal = input[3]
-//     let pW = input[4]
+function catDiet(input) {
+    let gramProtein = 4
+    let gramCal = 9
+    let gramVug = 4
+    let pM = input[0] / 100
+    let pP = input[1] / 100
+    let pV = input[2] / 100
+    let totalCal = input[3]
+    let pW = input[4]
 
-//     let totalM = (totalCal * pM) / gramCal
-//     let totalP = (totalCal * pP) / gramProtein
-//     let totalV = (totalCal * pV) / gramVug
+    let totalM = (totalCal * pM) / gramCal
+    let totalP = (totalCal * pP) / gramProtein
+    let totalV = (totalCal * pV) / gramVug
 
-//     let WeightFood = totalM + totalP + totalV
-//     let calForOneGram = totalCal / WeightFood
+    let WeightFood = totalM + totalP + totalV
+    let calForOneGram = totalCal / WeightFood
 
-//     let calAfterWater = (100 - pW) / 100
-//     let totalCalories = calForOneGram * calAfterWater
+    let calAfterWater = (100 - pW) / 100
+    let totalCalories = calForOneGram * calAfterWater
 
-//     console.log(totalCalories.toFixed(4))
-// }
+    console.log(totalCalories.toFixed(4))
+}
 
 
-// catDiet([60, 25, 15, 2500, 60])
+catDiet([60, 25, 15, 2500, 60])
 
 /*
 
